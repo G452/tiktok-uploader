@@ -1,0 +1,5 @@
+version: '3'
+
+services:
+  tiktok-uploader:
+    image: gabby/tiktok-uploader:5e6a9d9
