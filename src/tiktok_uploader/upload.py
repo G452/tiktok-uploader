@@ -388,7 +388,7 @@ def _set_description(driver, description: str) -> None:
 
                 found = False
                 waiting_interval = 0.5
-                timeout = 5
+                timeout = 60
                 start_time = time.time()
 
                 while not found and (time.time() - start_time < timeout):

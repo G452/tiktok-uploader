@@ -81,7 +81,7 @@ def validate_uploader_args(args: dict):
 
     # Makes sure the video file exists
     if not exists(args.video):
-        raise FileNotFoundError(f'Could not find the video file at {args["video"]}')
+        raise FileNotFoundError(f'Could not find the video file at {args.video}')
 
     # User can not pass in both cookies and username / password
     if args.cookies and (args.username or args.password):
